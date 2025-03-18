@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Advanced Modern Calculator</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="theme-switch">
+			<label class="theme-switch__label">
+				<input type="checkbox" id="themeToggle" />
+				<span class="theme-switch__slider"></span>
+			</label>
+		</div>
+		<div class="container">
+			<div class="calculator">
+				<div class="calculator__screen">0</div>
+				<div class="calculator__btns">
+					<button
+						class="calculator__btn calculator__btn--memory"
+						data-action="mc"
+					>
+						MC
+					</button>
+					<button
+						class="calculator__btn calculator__btn--memory"
+						data-action="mr"
+					>
+						MR
+					</button>
+					<button
+						class="calculator__btn calculator__btn--memory"
+						data-action="m+"
+					>
+						M+
+					</button>
+					<button
+						class="calculator__btn calculator__btn--memory"
+						data-action="m-"
+					>
+						M-
+					</button>
+
+					<button
+						class="calculator__btn calculator__btn--operator"
+						data-operator="+"
+					>
+						+
+					</button>
+					<button
+						class="calculator__btn calculator__btn--operator"
+						data-operator="-"
+					>
+						-
+					</button>
+					<button
+						class="calculator__btn calculator__btn--operator"
+						data-operator="*"
+					>
+						x
+					</button>
+					<button
+						class="calculator__btn calculator__btn--operator"
+						data-operator="/"
+					>
+						÷
+					</button>
+
+					<button class="calculator__btn" data-number="7">7</button>
+					<button class="calculator__btn" data-number="8">8</button>
+					<button class="calculator__btn" data-number="9">9</button>
+					<button
+						class="calculator__btn calculator__btn--function"
+						data-action="sqrt"
+					>
+						√
+					</button>
+
+					<button class="calculator__btn" data-number="4">4</button>
+					<button class="calculator__btn" data-number="5">5</button>
+					<button class="calculator__btn" data-number="6">6</button>
+					<button
+						class="calculator__btn calculator__btn--function"
+						data-action="square"
+					>
+						x²
+					</button>
+
+					<button class="calculator__btn" data-number="1">1</button>
+					<button class="calculator__btn" data-number="2">2</button>
+					<button class="calculator__btn" data-number="3">3</button>
+					<button
+						class="calculator__btn calculator__btn--function"
+						data-action="inverse"
+					>
+						1/x
+					</button>
+
+					<button class="calculator__btn" data-number="0">0</button>
+					<button class="calculator__btn" data-action="decimal">.</button>
+					<button
+						class="calculator__btn calculator__btn--equal"
+						data-action="calculate"
+					>
+						=
+					</button>
+					<button
+						class="calculator__btn calculator__btn--clear"
+						data-action="clear"
+					>
+						C
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+		<script defer src="script.js"></script>
+	</body>
+</html>

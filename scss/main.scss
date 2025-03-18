@@ -1,0 +1,23 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./components/calculator";
+@import "./components/theme-switch";
+
+// Reset
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $primary-font;
+	background-color: $bg-color;
+	color: $text-color;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+	@include flex-center;
+	min-height: 100vh;
+}

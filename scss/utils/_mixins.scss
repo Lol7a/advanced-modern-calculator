@@ -1,0 +1,37 @@
+// Flexbox center
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// Responsive breakpoints
+@mixin respond($breakpoint) {
+	@if $breakpoint == mobile {
+		@media (max-width: 600px) {
+			@content;
+		}
+	} @else if $breakpoint == tablet {
+		@media (max-width: 900px) {
+			@content;
+		}
+	} @else if $breakpoint == desktop {
+		@media (max-width: 1200px) {
+			@content;
+		}
+	}
+}
+
+// Animations
+@mixin fadeIn($time) {
+	animation: fadeIn $time ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

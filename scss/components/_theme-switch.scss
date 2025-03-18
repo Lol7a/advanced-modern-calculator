@@ -1,0 +1,56 @@
+.theme-switch {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	&_label {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+
+	&__slider {
+		width: 40px;
+		height: 20px;
+		background: #ccc;
+		border-radius: 10px;
+		position: relative;
+		transition: background 0.3s;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			background: white;
+			border-radius: 50%;
+			top: 50%;
+			left: 4px;
+			transform: translateY(-50%);
+			transition: left 0.3s;
+		}
+	}
+}
+
+.theme-switch__label input:checked + .theme-switch__slider {
+	background: $primary-color;
+}
+
+.theme-switch__label input:checked + .theme-switch__slider::before {
+	left: 20px;
+}
+
+// Dark theme
+body.dark-mode {
+	background-color: $secondary-color;
+	color: white;
+}
+
+.calculator__btn--equal {
+	background: #ff9800;
+	color: white;
+
+	&:hover {
+		background: darken(#ff9800, 10%);
+	}
+}
